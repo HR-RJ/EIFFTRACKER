@@ -59,15 +59,13 @@ async def firstoreiff(ctx):
 
 @bot.command(name='compare', help='Compares the average placements of two summoners')
 async def compare(ctx, summoner_name1: str, summoner_name2: str):
-    lol_watcher = LolWatcher(RIOT_API_KEY)
-    my_region = REGION
     
     try:
-        summoner1 = lol_watcher.summoner.by_name(my_region, summoner_name1)
-        games1 = lol_watcher.tft_match.by_puuid(my_region, summoner1['puuid'])
+        summoner1 = tft_watcher.summoner.by_name(REGION, summoner_name1)
+        games1 = tft_watcher.tft_match.by_puuid(REGION, summoner1['puuid'])
 
-        summoner2 = lol_watcher.summoner.by_name(my_region, summoner_name2)
-        games2 = lol_watcher.tft_match.by_puuid(my_region, summoner2['puuid'])
+        summoner2 = tft_watcher.summoner.by_name(REGION, summoner_name2)
+        games2 = tft_watcher.tft_match.by_puuid(REGION, summoner2['puuid'])
         
         placement_data1 = process_games(games1)
         placement_data2 = process_games(games2)
