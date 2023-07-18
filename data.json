@@ -3,17 +3,150 @@
         "143337676085526528": {
             "id": "CTNtD5I7Pv4c0CH8cn-MMpwe1I1vErzCV3uu9Xur_DVeiP4x",
             "name": "Skateparkge",
-            "rank": "-",
-            "ppid": 4756
+            "rank": "DIAMOND III",
+            "puuid": "-CB8zErKLjdr1bcgbmyuZFttMW2ykm0b_rcGnyKFyXYLrZwGhxfgpua1d7fpVlVQzM1PDwib4VSL3A",
+            "last_matches": [
+                {
+                    "date": "18/07/2023 20:36:26",
+                    "placement": 2,
+                    "augment": [
+                        "TFT9_Augment_PandorasRadiantBox",
+                        "TFT9_Augment_ChallengerDefensiveDash"
+                    ]
+                },
+                {
+                    "date": "18/07/2023 19:49:39",
+                    "placement": 4,
+                    "augment": [
+                        "TFT9_Augment_Commander_LargeForge",
+                        "TFT9_Augment_Formation1"
+                    ]
+                },
+                {
+                    "date": "18/07/2023 18:54:50",
+                    "placement": 8,
+                    "augment": [
+                        "TFT9_Augment_PiltoverTrait",
+                        "TFT6_Augment_TinyTitans",
+                        "TFT9_Augment_Harmacist2"
+                    ]
+                },
+                {
+                    "date": "18/07/2023 17:52:58",
+                    "placement": 2,
+                    "augment": [
+                        "TFT9_Augment_RollTheDice",
+                        "TFT7_Augment_TomeOfTraits2"
+                    ]
+                },
+                {
+                    "date": "18/07/2023 17:16:16",
+                    "placement": 3,
+                    "augment": [
+                        "TFT9_Augment_IndomitableWill",
+                        "TFT7_Augment_ThinkFast"
+                    ]
+                }
+            ]
         },
-        "197777267219365888": {}
-    },
-    "143337676085526528": {
-        "id": "CTNtD5I7Pv4c0CH8cn-MMpwe1I1vErzCV3uu9Xur_DVeiP4x",
-        "disc_id": "143337676085526528"
-    },
-    "196256537503727616": {
-        "id": "01vbqiOUICw2sLrHWrs3etOmJQGiduHeb48dbcwCY787STc",
-        "disc_id": "196256537503727616"
+        "197777267219365888": {
+            "id": "7RHSUBCGUSrr9GDVSOn3YeH9I-uN6bkd3sZzvjzOj-aPh7Y",
+            "name": "TheOneAndAnjish",
+            "rank": "Bronze I 65 LP",
+            "puuid": "BCdUg1UdUP0QcIoIzR8rnRPhfOH04WRyV2B42rveutctjcNo_H99BheWcBahEzoo4v8SiKP8G_YQVg",
+            "last_matches": [
+                {
+                    "date": "2023/07/17 13:25:24",
+                    "placement": 8,
+                    "augments": [
+                        "TFT9_Augment_JustKeepRolling"
+                    ],
+                    "players": [
+                        "Marsl123",
+                        "lairlair2",
+                        "karmalunar",
+                        "Smackki",
+                        "darkwolf741085",
+                        "ToutPareil54",
+                        "PAPDLeSaumon",
+                        "TheOneAndAnjish"
+                    ]
+                },
+                {
+                    "date": "2023/07/17 03:04:22",
+                    "placement": 2,
+                    "augments": [
+                        "TFT9_Augment_SettTheBoss",
+                        "TFT6_Augment_PandorasItems",
+                        "TFT9_Augment_Commander_TeamingUp2"
+                    ],
+                    "players": [
+                        "TheOneAndAnjish",
+                        "aLackofSerotonin",
+                        "Maej33",
+                        "Le Kimono Ayoken",
+                        "santanito",
+                        "Okama Way 2",
+                        "Killer0hre real2",
+                        "C1POTE F1ESTERO"
+                    ]
+                },
+                {
+                    "date": "2023/07/17 02:33:54",
+                    "placement": 6,
+                    "augments": [
+                        "TFT9_Augment_PandorasRadiantBox",
+                        "TFT9_Augment_Sleightofhand",
+                        "TFT9_Augment_CapriciousForge"
+                    ],
+                    "players": [
+                        "TheOneAndAnjish",
+                        "Tentacule Sense\u00ef",
+                        "cysiacysia",
+                        "PanPito",
+                        "GG2K",
+                        "BlauerPuschel",
+                        "SmyziIZFructov",
+                        "Vanaryi"
+                    ]
+                },
+                {
+                    "date": "2023/07/17 02:08:59",
+                    "placement": 8,
+                    "augments": [
+                        "TFT9_Augment_SettTheBoss",
+                        "TFT9_Augment_ReturnOnInvestment"
+                    ],
+                    "players": [
+                        "Titurris",
+                        "TheOneAndAnjish",
+                        "Idjot Orang",
+                        "Prof Proton",
+                        "MasterEvil2005",
+                        "AiG0",
+                        "manuelgironb",
+                        "D3vilx0rxi"
+                    ]
+                },
+                {
+                    "date": "2023/07/10 23:48:54",
+                    "placement": 8,
+                    "augments": [
+                        "TFT9_Augment_SlayerTrait",
+                        "TFT9_Augment_LongDistanceRelationship2"
+                    ],
+                    "players": [
+                        "LuckyCharm26",
+                        "\u00d0arkelle",
+                        "killerll",
+                        "TheOneAndAnjish",
+                        "Bronze5RickRoss",
+                        "TuffiMilch",
+                        "Orange Chicken",
+                        "Hassassin"
+                    ]
+                }
+            ]
+        }
     }
 }
