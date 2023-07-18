@@ -7,6 +7,9 @@ import json
 import random
 from datetime import datetime
 
+# maybe make a local cache of the data so we don't have to make a request every time
+# and maybe add logging to a file
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 RIOT_API_KEY = os.getenv('RIOT_API_KEY')
@@ -21,22 +24,50 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 def search(id, list):
     return [element['id'] for element in list if element['disc_id'] == id]
 
+def load_data():
+    with open(data_file, 'r') as f:
+        return json.load(f)
+
 @bot.command(name='register', help="Register your summoner to Pengu")
 async def register(ctx, summoner_name: str):
-    data = json.loads(data_file)
     try:
         summoner = tft_watcher.summoner.by_name(REGION, summoner_name)
-        await ctx.send(f'Summoner {summoner_name} has been registered.')
+        data = load_data()
+        if str(ctx.author.id) not in data:
+            data[str(ctx.author.id)] = {'id': summoner['id'], 'disc_id': str(ctx.author.id)}
+            with open(data_file, 'w') as f:
+                json.dump(data, f)
+            await ctx.send(f'Summoner {summoner_name} has been registered.')
+        else:
+            await ctx.send('You have already registered a summoner.')
     except ApiError as err:
         if err.response.status_code == 429:
             await ctx.send('We have hit the rate limit. Please try again later.')
         else:
             await ctx.send('There was an error getting the data.')
+            print(err)
 
+@bot.command(name='unregister', help="Unregister your summoner from Pengu")
+async def unregister(ctx):
+    try:
+        data = load_data
+        if str(ctx.author.id) in data:
+            data.pop(str(ctx.author.id))
+            with open(data_file, 'w') as f:
+                json.dump(data, f)
+            await ctx.send('Summoner has been unregistered.')
+        else:
+            await ctx.send('You have not registered a summoner.')
+    except ApiError as err:
+        if err.response.status_code == 429:
+            await ctx.send('We have hit the rate limit. Please try again later.')
+        else:
+            await ctx.send('There was an error getting the data.')
+            print(err)
 
 @bot.command(name='tft', help='Lookup a tft user with rank and last 5 games')
 async def tft(ctx, summoner_name: str):
-    data = json.loads(data_file)
+    data = load_data()
     try:
         summoner_id = data[ctx.author.id]['id']
         summoner = tft_watcher.league.by_summoner(REGION, summoner)
