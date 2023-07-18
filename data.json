@@ -1,1 +1,19 @@
-{"users": {"143337676085526528": {"id": "CTNtD5I7Pv4c0CH8cn-MMpwe1I1vErzCV3uu9Xur_DVeiP4x", "name": "Skateparkge", "rank": "-", "ppid": 4756}, "197777267219365888": {}}, "143337676085526528": {"id": "CTNtD5I7Pv4c0CH8cn-MMpwe1I1vErzCV3uu9Xur_DVeiP4x", "disc_id": "143337676085526528"}, "196256537503727616": {"id": "01vbqiOUICw2sLrHWrs3etOmJQGiduHeb48dbcwCY787STc", "disc_id": "196256537503727616"}}
+{
+    "users": {
+        "143337676085526528": {
+            "id": "CTNtD5I7Pv4c0CH8cn-MMpwe1I1vErzCV3uu9Xur_DVeiP4x",
+            "name": "Skateparkge",
+            "rank": "-",
+            "ppid": 4756
+        },
+        "197777267219365888": {}
+    },
+    "143337676085526528": {
+        "id": "CTNtD5I7Pv4c0CH8cn-MMpwe1I1vErzCV3uu9Xur_DVeiP4x",
+        "disc_id": "143337676085526528"
+    },
+    "196256537503727616": {
+        "id": "01vbqiOUICw2sLrHWrs3etOmJQGiduHeb48dbcwCY787STc",
+        "disc_id": "196256537503727616"
+    }
+}

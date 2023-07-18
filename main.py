@@ -29,12 +29,18 @@ def load_data():
         return json.load(f)
 
 @bot.command(name='register', help="Register your summoner to Pengu")
-async def register(ctx, summoner_name: str):
+async def register(ctx, *summoner_name):
     try:
-        summoner = tft_watcher.summoner.by_name(REGION, summoner_name)
+        summoner = tft_watcher.summoner.by_name(REGION, "".join(summoner_name[:]))
+        summoner_match = tft_watcher.match.by_id(REGION, summoner['id'])
         data = load_data()
         if str(ctx.author.id) not in data:
-            data[str(ctx.author.id)] = {'id': summoner['id'], 'disc_id': str(ctx.author.id)}
+            json_data = {
+                'id': summoner['id'], 
+                'name': summoner['name'], 
+                'rank': summoner_match['tier'] + ' ' + summoner_match['rank']
+            }
+            data[str(ctx.author.id)] = json_data
             with open(data_file, 'w') as f:
                 json.dump(data, f)
             await ctx.send(f'Summoner {summoner_name} has been registered.')
