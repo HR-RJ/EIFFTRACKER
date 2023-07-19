@@ -18,7 +18,7 @@ eifftracker-python-1  | 2023-07-19 12:31:41 INFO     discord.gateway Shard ID No
 ## Commands:
 
 - $help 
-  - help commands shows all the commands, how they should be used and what they di
+  - help commands shows all the commands, how they should be used and what they do
 - $firstoreiff
   - rolls to see if you'll go first or eiff next game 
 - $register <name>
