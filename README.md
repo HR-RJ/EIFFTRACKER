@@ -29,5 +29,5 @@ eifftracker-python-1  | 2023-07-19 12:31:41 INFO     discord.gateway Shard ID No
   - check the stats of the last 5 games of the linked riot account
 - $tft <name>
   - Lookup a tft user with rank and last 5 games
-- $zcompare <name>, <name>
+- $compare <name>, <name>
   - Compares the average placements of two summoners
