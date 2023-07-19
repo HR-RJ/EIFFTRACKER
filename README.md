@@ -1,6 +1,27 @@
 # EIFFTRACKER(TFT discord tracker)
-this bot tracks the TFT stats of registered users in a discord
+This bot tracks the TFT stats of registered users in a discord
 
-# Installation
+## docker:
+To create a docker container for the bot you can run the following command while in the folder:
+```bash
+docker build -t <nameOfBot> .
+```
+Then run:
+```bash
+docker-compose up
+```
+you should then see:
+```bash
+eifftracker-python-1  | 2023-07-19 12:31:40 INFO     discord.client logging in using static token
+eifftracker-python-1  | 2023-07-19 12:31:41 INFO     discord.gateway Shard ID None has connected to Gateway (Session ID: <your id>).
+```
+## Commands:
 
-# Example
+- $help 
+  - help commands shows all the commands, how they should be used and what they di
+- $firstoreiff
+  - rolls to see if you'll go first or eiff next game 
+- $register <name>
+  - link your discord account to your riot account
+- $tftme
+  - check the stats of the last 5 games of the linked riot account

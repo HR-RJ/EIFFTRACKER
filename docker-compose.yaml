@@ -1,0 +1,7 @@
+version: '3'
+services:
+  python:
+    image: python311rj
+    volumes:
+      - .:/app
+    working_dir: /app

@@ -1,0 +1,5 @@
+discord==2.3.1
+discord.ui==5.1.6
+riotwatcher==3.2.5
+arrow==1.2.3
+python-dotenv==1.0.0
