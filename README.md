@@ -6,6 +6,7 @@ To create a docker container for the bot you can run the following command while
 ```bash
 docker build -t <nameOfBot> .
 ```
+make sure to replace \<**nameOfBot**> in the docker-compose.yaml file with the name you gave the bot.
 Then run:
 ```bash
 docker-compose up
