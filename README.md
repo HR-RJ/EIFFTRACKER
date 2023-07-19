@@ -23,11 +23,11 @@ eifftracker-python-1  | 2023-07-19 12:31:41 INFO     discord.gateway Shard ID No
   - rolls to see if you'll go first or eiff next game 
 - $register <name>
   - link your discord account to your riot account
-- unregister
+- $unregister
   - unlinks your discord account from the linked riot account
 - $tftme
   - check the stats of the last 5 games of the linked riot account
-- tft <name>
+- $tft <name>
   - Lookup a tft user with rank and last 5 games
-- compare <name>, <name>
+- $zcompare <name>, <name>
   - Compares the average placements of two summoners
